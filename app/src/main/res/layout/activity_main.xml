@@ -12,8 +12,109 @@
     tools:context="com.bazandar.myfriendmyfriend.MainActivity">
 
     <TextView
-        android:id="@+id/sample_text"
+        android:id="@+id/slogan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Meet some friends and play!"
+        android:textAppearance="@android:style/TextAppearance.Material.Subhead" />
+
+    <CheckBox
+        android:text="Guitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="74dp"
+        android:id="@+id/guitarSelect" />
+
+    <CheckBox
+        android:text="Bass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/guitarSelect"
+        android:layout_toRightOf="@+id/guitarSelect"
+        android:layout_toEndOf="@+id/guitarSelect"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:id="@+id/bassSelect" />
+
+    <CheckBox
+        android:text="Keys/Piano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pianoSelect"
+        android:layout_alignBaseline="@+id/bassSelect"
+        android:layout_alignBottom="@+id/bassSelect"
+        android:layout_toRightOf="@+id/slogan"
+        android:layout_toEndOf="@+id/slogan"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <CheckBox
+        android:text="Drums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guitarSelect"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/drumSelect" />
+
+    <TextView
+        android:text="What do you play?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/whatAsker"
+        android:layout_above="@+id/bassSelect"
+        android:layout_toRightOf="@+id/drumSelect"
+        android:layout_toEndOf="@+id/drumSelect"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="11dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+
+    <CheckBox
+        android:text="Other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/drumSelect"
+        android:layout_alignLeft="@+id/bassSelect"
+        android:layout_alignStart="@+id/bassSelect"
+        android:id="@+id/otherSelect" />
+
+    <TextView
+        android:text="Where are you?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/whereAsker"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        android:layout_below="@+id/otherSelect"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text|number"
+        android:text="Enter your zipcode"
+        android:ems="10"
+        android:layout_below="@+id/whereAsker"
+        android:layout_alignEnd="@+id/whatAsker"
+        android:layout_marginTop="16dp"
+        android:id="@+id/zipEntry"
+        android:singleLine="false"
+        style="@android:style/Widget.Material.Light.EditText" />
+
+    <Button
+        android:text="Find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zipEntry"
+        android:layout_alignStart="@+id/whatAsker"
+        android:layout_marginTop="41dp"
+        android:id="@+id/goButton"
+        android:layout_alignEnd="@+id/whereAsker"
+        android:textAppearance="@android:style/TextAppearance.Material.Button"
+        style="@android:style/Widget.Material.Button" />
+
 </RelativeLayout>
