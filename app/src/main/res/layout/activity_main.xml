@@ -115,6 +115,7 @@
         android:id="@+id/goButton"
         android:layout_alignEnd="@+id/whereAsker"
         android:textAppearance="@android:style/TextAppearance.Material.Button"
-        style="@android:style/Widget.Material.Button" />
+        style="@android:style/Widget.Material.Button"
+        android:onClick="buttonOnClick" />
 
 </RelativeLayout>

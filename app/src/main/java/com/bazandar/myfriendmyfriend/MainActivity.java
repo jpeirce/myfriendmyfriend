@@ -2,6 +2,8 @@ package com.bazandar.myfriendmyfriend;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,6 +13,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+    public void buttonOnClick(View v) {
+        Button button=(Button) v;
+        ((Button) v).findViewById(R.id.)
+
+    }
     // Example of a call to a native method
     TextView tv = (TextView) findViewById(R.id.slogan);
     tv.setText(stringFromJNI());
